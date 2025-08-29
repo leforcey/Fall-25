@@ -1,0 +1,23 @@
+function state = eqnofmotion(t, x)
+
+% the original equation is a 3D vector second order ODE
+% need to translate into a system of 6 first order ODES
+
+    % state = [xd;yd;zd;xdd;ydd;zdd]
+    state = [0;0;0;0;0;0];  % initializing
+
+    % position
+    posVec = x(1:3);  % [x; y; z]
+    % r = distance from center of earth to the satellite
+    % r = rm - rM (BMW 1-20)
+    r = norm(posVec);
+    
+    % velocity
+    velVec = x(4:6);  % [vx; vy; vz]
+   
+    % fill in the state vector
+    mu = 3.986e5;  % km^3/s^2 (bc earth is the central mass
+    state(1:3) = velVec;  % first 3 values are velocity
+    mu = 3.986e5;  % km^3/s^2 (bc earth is the central mass
+    state(4:6) = -mu * posVec / r^3;  % second 3 values are acceleration
+end
