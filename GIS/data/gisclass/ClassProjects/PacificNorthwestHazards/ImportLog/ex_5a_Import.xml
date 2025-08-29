@@ -1,0 +1,31 @@
+<ImportMXDLog>	<Messages>
+		<FileName>C:\MGISPro\gisclass\mgisdata\MapDocuments\ex_5a.mxd</FileName>
+		<Message>
+			<Name></Name>
+			<MessageType>Warning</MessageType>
+			<Severity>Medium</Severity>
+			<Description>Layer contains a multilayer line symbol whose symbol widths may result in aliasing when displayed</Description>
+			<Code>20007</Code>
+			<ComponentName>Highways</ComponentName>
+			<ComponentType>Layer</ComponentType>
+</Message>
+		<Message>
+			<Name></Name>
+			<MessageType>Warning</MessageType>
+			<Severity>Medium</Severity>
+			<Description>Layer contains a multilayer line symbol whose symbol widths may result in aliasing when displayed</Description>
+			<Code>20007</Code>
+			<ComponentName>Highways</ComponentName>
+			<ComponentType>Layer</ComponentType>
+</Message>
+		<Message>
+			<Name></Name>
+			<MessageType>Warning</MessageType>
+			<Severity>Medium</Severity>
+			<Description>Data frame clipping is not supported yet and has been dropped from the imported document.</Description>
+			<Code>20049</Code>
+			<ComponentName>ex_5a</ComponentName>
+			<ComponentType>Layout</ComponentType>
+</Message>
+</Messages>
+</ImportMXDLog>

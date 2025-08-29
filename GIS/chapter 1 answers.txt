@@ -1,0 +1,5 @@
+GIS chapter 1 answers:
+
+Q1: What is the area of the lake in hectares?
+A1: 5408.02469 hectares
+

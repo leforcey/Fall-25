@@ -1,0 +1,355 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "1.4.0",
+  "build" : 7198,
+  "layers" : [
+    "CIMPATH=topo_functions/landcover.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMRasterLayer",
+      "name" : "landcover",
+      "uRI" : "CIMPATH=topo_functions/landcover.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/3abd7cb11492a37af154e6ebab61aa95.xml",
+      "description" : "landcover",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{ABBFEA38-E96E-4B43-9484-52627D0D3E78}"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "dataConnection" : {
+        "type" : "CIMStandardDataConnection",
+        "workspaceConnectionString" : "DATABASE=.\\Sturgis.gdb",
+        "workspaceFactory" : "FileGDB",
+        "dataset" : "landcover",
+        "datasetType" : "esriDTRasterDataset"
+      },
+      "colorizer" : {
+        "type" : "CIMRasterUniqueValueColorizer",
+        "resamplingType" : "NearestNeighbor",
+        "noDataColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "defaultColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            0,
+            0,
+            0,
+            100
+          ]
+        },
+        "fieldName" : "Covertype",
+        "groups" : [
+          {
+            "type" : "CIMRasterUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Open Water"
+                ],
+                "label" : "Open Water",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    77,
+                    168,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Developed, Open Space"
+                ],
+                "label" : "Developed, Open Space",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    190,
+                    232,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Developed, Low Intensity"
+                ],
+                "label" : "Developed, Low Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    115,
+                    223,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Developed, Med Intensity"
+                ],
+                "label" : "Developed, Med Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    230,
+                    0,
+                    169,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Developed, High Intensity"
+                ],
+                "label" : "Developed, High Intensity",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    115,
+                    0,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Barren Land"
+                ],
+                "label" : "Barren Land",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    156,
+                    156,
+                    156,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Deciduous Forest"
+                ],
+                "label" : "Deciduous Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    209,
+                    255,
+                    115,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Evergreen Forest"
+                ],
+                "label" : "Evergreen Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    115,
+                    76,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Mixed Forest"
+                ],
+                "label" : "Mixed Forest",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    152,
+                    230,
+                    0,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Shrub/Scrub"
+                ],
+                "label" : "Shrub/Scrub",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    205,
+                    205,
+                    102,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Grassland/Herbaceous"
+                ],
+                "label" : "Grassland/Herbaceous",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    235,
+                    175,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Pasture/Hay"
+                ],
+                "label" : "Pasture/Hay",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    255,
+                    167,
+                    127,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Cultivated Crops"
+                ],
+                "label" : "Cultivated Crops",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    168,
+                    56,
+                    0,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Woody Wetlands"
+                ],
+                "label" : "Woody Wetlands",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    168,
+                    132,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMRasterUniqueValueClass",
+                "values" : [
+                  "Emergent Herbac. Wetland"
+                ],
+                "label" : "Emergent Herbac. Wetland",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    163,
+                    255,
+                    115,
+                    100
+                  ]
+                }
+              }
+            ],
+            "heading" : "Covertype"
+          }
+        ],
+        "colorRamp" : {
+          "type" : "CIMRandomHSVColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "maxH" : 360,
+          "minS" : 33,
+          "maxS" : 66,
+          "minV" : 50,
+          "maxV" : 99,
+          "minAlpha" : 100,
+          "maxAlpha" : 100
+        }
+      },
+      "attributeTable" : {
+        "type" : "CIMRasterTable",
+        "displayField" : "Value",
+        "editable" : true
+      }
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/3abd7cb11492a37af154e6ebab61aa95.xml",
+      "data" : "<metadata xml:lang=\"en\"><Esri><CreaDate>20100716</CreaDate><CreaTime>21065300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><ArcGISstyle>North American Profile of ISO19115 2003</ArcGISstyle><SyncOnce>FALSE</SyncOnce><DataProperties><lineage><Process ToolSource=\"C:\\Program Files (x86)\\ArcGIS\\Desktop10.0\\ArcToolbox\\Toolboxes\\Spatial Analyst Tools.tbx\\ExtractByMask\" Date=\"20100716\" Time=\"210653\" Name=\"\" export=\"\">ExtractByMask C:\\MGIS5\\mgisdata\\BlackHills\\Sturgis83.mdb\\landcoverutm geology C:\\MGIS5\\mgisdata\\BlackHills\\Sturgis83.mdb\\landcover</Process><Process ToolSource=\"C:\\Program Files (x86)\\ArcGIS\\Desktop10.0\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\AddColormap\" Date=\"20100716\" Time=\"210732\" Name=\"\" export=\"\">AddColormap C:\\MGIS5\\mgisdata\\BlackHills\\Sturgis83.mdb\\landcover C:\\MGIS5\\mgisdata\\BlackHills\\Sturgis83.mdb\\landcoverutm #</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CopyRaster\" Date=\"20161018\" Time=\"152045\">CopyRaster C:\\Oct2016Work\\MGISPro\\mgisdata\\BlackHills\\Sturgis83.mdb\\landcover C:\\Oct2016Work\\MGISPro\\mgisdata\\BlackHills\\Sturgis.gdb\\landcover # # -128 NONE NONE # NONE NONE \"Esri Grid\" NONE</Process></lineage><itemProps><itemName Sync=\"TRUE\">landcover</itemName><imsContentType Sync=\"TRUE\">002</imsContentType><nativeExtBox><westBL Sync=\"TRUE\">599372.786900</westBL><eastBL Sync=\"TRUE\">619742.786900</eastBL><southBL Sync=\"TRUE\">4900400.440900</southBL><northBL Sync=\"TRUE\">4928510.440900</northBL><exTypeCode Sync=\"TRUE\">1</exTypeCode></nativeExtBox><itemLocation><linkage Sync=\"TRUE\">file://\\\\HARNEY2\\C$\\MGISPro\\mgisdata\\BlackHills\\Sturgis.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></itemLocation><itemSize Sync=\"TRUE\">0.153</itemSize></itemProps><coordRef><type Sync=\"TRUE\">Projected</type><geogcsn Sync=\"TRUE\">GCS_North_American_1983</geogcsn><projcsn Sync=\"TRUE\">NAD_1983_UTM_Zone_13N</projcsn><peXml Sync=\"TRUE\">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.4'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_13N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-105.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26913]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26913&lt;/WKID&gt;&lt;LatestWKID&gt;26913&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml><csUnits Sync=\"TRUE\">Linear Unit: Meter (1.000000)</csUnits></coordRef></DataProperties><SyncDate>20161022</SyncDate><SyncTime>11041200</SyncTime><ModDate>20161022</ModDate><ModTime>11041200</ModTime><ArcGISProfile>NAP</ArcGISProfile></Esri><dataIdInfo><envirDesc Sync=\"TRUE\"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.4.1.5686</envirDesc><dataLang><languageCode value=\"eng\" country=\"USA\"/><countryCode value=\"USA\" Sync=\"TRUE\"></countryCode></dataLang><idCitation><resTitle Sync=\"TRUE\">landcover</resTitle><presForm><PresFormCd value=\"005\"/></presForm></idCitation><descKeys><thesaName uuidref=\"723f6998-058e-11dc-8314-0800200c9a66\"/><keyword Sync=\"TRUE\">002</keyword></descKeys><spatRpType><SpatRepTypCd value=\"002\"/></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType=\"search\"><westBL Sync=\"TRUE\">-103.755301</westBL><eastBL Sync=\"TRUE\">-103.493763</eastBL><northBL Sync=\"TRUE\">44.503073</northBL><southBL Sync=\"TRUE\">44.246997</southBL><exTypeCode Sync=\"TRUE\">1</exTypeCode></GeoBndBox></geoEle></dataExt><idPurp>The goal of this project is to provide the Nation with complete, current and consistent public domain information on its land use and land cover.</idPurp><idAbs>&lt;DIV STYLE=\"text-align:Left;\"&gt;&lt;P STYLE=\"margin:0 0 16 10;\"&gt;&lt;SPAN STYLE=\"font-size:8pt\"&gt;The National Land Cover Database 2001 land cover layer for mapping zone 30 was produced through a cooperative project conducted by the Multi-Resolution Land Characteristics (MRLC) Consortium.  The MRLC Consortium is a partnership of federal agencies (www.mrlc.gov), consisting of the U.S. Geological Survey (USGS), the National Oceanic and Atmospheric Administration (NOAA), the U.S. Environmental Protection Agency (EPA), the U.S. Department of Agriculture (USDA), the U.S. Forest Service (USFS), the National Park Service (NPS), the U.S. Fish and Wildlife Service (FWS), the Bureau of Land Management (BLM) and the USDA Natural Resources Conservation Service (NRCS).  One of the primary goals of the project is to generate a current, consistent, seamless, and accurate National Land cover Database (NLCD) circa 2001 for the United States at medium spatial resolution.  This landcover map and all documents pertaining to it are considered \"provisional\"  until a formal accuracy assessment can be conducted.  For a detailed definition and discussion on MRLC and the NLCD 2001 products, refer to Homer et al. (2004) and &lt;/SPAN&gt;&lt;A href=\"http://www.mrlc.gov/mrlc2k.asp.The\"&gt;&lt;SPAN STYLE=\"font-size:8pt\"&gt;http://www.mrlc.gov/mrlc2k.asp.The&lt;/SPAN&gt;&lt;/A&gt;&lt;SPAN STYLE=\"font-size:8pt\"&gt; NLCD 2001 is created by partitioning the U.S. into mapping zones.  A total of 66 mapping zones were delineated within the conterminous U.S. based on ecoregion and geographical characteristics, edge matching features and the size requirement of Landsat mosaics.  Mapping zone 30 encompasses whole or portions of several states, including the states of Montana, North Dakota, and South Dakota.  Questions about the NLCD mapping zone 30 can be directed to the NLCD 2001 land cover mapping team at the USGS/EROS, Sioux Falls, SD (605) 594-6151 or mrlc@usgs.gov.&lt;/SPAN&gt;&lt;/P&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN /&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs><idCredit>U.S. Geological Survey, Rocky Mountain Geographic Science Center (RMGSC)</idCredit><searchKeys><keyword>Land Cover</keyword><keyword>GIS</keyword><keyword>U.S. Geological Survey</keyword><keyword>USGS</keyword><keyword>digital spatial data</keyword><keyword>imagery</keyword><keyword>Base Maps</keyword><keyword>Earth Cover</keyword><keyword>United States</keyword><keyword>U.S.</keyword><keyword>US</keyword><keyword>zone 30</keyword><keyword>MT</keyword><keyword>Montana</keyword><keyword>ND</keyword><keyword>North Dakota</keyword><keyword>SD</keyword><keyword>South Dakota</keyword></searchKeys><resConst><Consts><useLimit>None</useLimit></Consts></resConst></dataIdInfo><mdLang><languageCode value=\"eng\"/><countryCode value=\"USA\" Sync=\"TRUE\"></countryCode></mdLang><mdChar><CharSetCd value=\"004\"/></mdChar><distInfo><distFormat><formatName Sync=\"TRUE\">File Geodatabase Raster Dataset</formatName></distFormat><distTranOps><transSize Sync=\"TRUE\">0.153</transSize></distTranOps></distInfo><mdHrLv><ScopeCd value=\"005\"/></mdHrLv><mdHrLvName Sync=\"TRUE\">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code=\"26913\"/><idCodeSpace Sync=\"TRUE\">EPSG</idCodeSpace><idVersion Sync=\"TRUE\">6.13(3.0.1)</idVersion></refSysID></RefSystem></refSysInfo><spdoinfo><rastinfo><rasttype Sync=\"TRUE\">Pixel</rasttype><rowcount Sync=\"TRUE\">937</rowcount><colcount Sync=\"TRUE\">679</colcount><rastxsz Sync=\"TRUE\">30.000000</rastxsz><rastysz Sync=\"TRUE\">30.000000</rastysz><rastbpp Sync=\"TRUE\">8</rastbpp><vrtcount Sync=\"TRUE\">1</vrtcount><rastorig Sync=\"TRUE\">Upper Left</rastorig><rastcmap Sync=\"TRUE\">TRUE</rastcmap><rastcomp Sync=\"TRUE\">LZ77</rastcomp><rastband Sync=\"TRUE\">1</rastband><rastdtyp Sync=\"TRUE\">pixel codes</rastdtyp><rastplyr Sync=\"TRUE\">TRUE</rastplyr><rastifor Sync=\"TRUE\">FGDBR</rastifor></rastinfo></spdoinfo><spref><horizsys><planar><planci><plance Sync=\"TRUE\">row and column</plance><coordrep><absres Sync=\"TRUE\">30.000000</absres><ordres Sync=\"TRUE\">30.000000</ordres></coordrep></planci></planar></horizsys></spref><mdDateSt Sync=\"TRUE\">20161022</mdDateSt><Binary><Thumbnail><Data EsriPropertyType=\"PictureX\">/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a\r\nHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy\r\nMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACFAMgDASIA\r\nAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA\r\nAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3\r\nODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm\r\np6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA\r\nAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx\r\nBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK\r\nU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3\r\nuLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iii\r\ngAooooAKKKKACoHvbSNA73UKqeNxkAFT145dw3l/pcYEEgRLqQKXPEaZ2qOn075P5VhXrOlG6Vy6\r\nceeai+p67Hd20q7o7iJx6q4NIL21afyBcwmXG7yxIN2M4zj615laX8PhyGFtUARIoiirCu5huJYs\r\n3P8As1MraXqV5HrumSGS43LG+CQ2047HsM5PH8uc44ltXaFUioy5U7no8l7aRKWkuoUUYBLSAAZ6\r\nVXGuaQSwGqWRKfeAuE4+vNc7ctbF2inkixMil42Gcj6elc7JoGm3Gty3cgaZYUjAtEcqE5IzgHkY\r\nH6UfWXfYUk9OXc9GOsacIDOb2ERAZLlxjH1/CpIdQs7iFZormN43G5WDcEeoryzxyEi0EW1kuN0i\r\n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</Data></Thumbnail></Binary><eainfo><detailed Name=\"VAT_landcover\"><enttyp><enttypl Sync=\"TRUE\">VAT_landcover</enttypl><enttypt Sync=\"TRUE\">Table</enttypt><enttypc Sync=\"TRUE\">15</enttypc></enttyp><attr><attrlabl Sync=\"TRUE\">OBJECTID</attrlabl><attalias Sync=\"TRUE\">OBJECTID</attalias><attrtype Sync=\"TRUE\">OID</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Internal feature number.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">Value</attrlabl><attalias Sync=\"TRUE\">Value</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">BinValues</attrlabl><attalias Sync=\"TRUE\">BinValues</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Count</attrlabl><attalias Sync=\"TRUE\">Count</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Opacity</attrlabl><attalias Sync=\"TRUE\">Opacity</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Covertype</attrlabl><attalias Sync=\"TRUE\">Covertype</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr></detailed></eainfo></metadata>\r\n"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{ABBFEA38-E96E-4B43-9484-52627D0D3E78}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
