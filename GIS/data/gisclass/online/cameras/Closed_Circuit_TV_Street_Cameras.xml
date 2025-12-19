@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <origin/>
+                <origin/>
+                <pubdate>20140829</pubdate>
+                <title>Closed Circuit TV Street Cameras</title>
+                <geoform>vector digital data</geoform>
+                <onlink>https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Sensors_WebMercator/MapServer/11</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Closed Circuit TV Street Cameras locations. The dataset contains locations and attributes of CCTV and other cameras, created as part of the DC Geographic Information System (DC GIS) for the D.C. Office of the Chief Technology Officer (OCTO) and participating D.C. government agencies.</abstract>
+            <purpose>This data is used for the planning and management of Washington, D.C. by local government agencies.</purpose>
+        </descript>
+        <status>
+            <progress>Complete</progress>
+            <update>As needed</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-77.13</westbc>
+                <eastbc>-76.9</eastbc>
+                <northbc>39.01</northbc>
+                <southbc>38.78</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>public safety</themekey>
+                <themekey>camera</themekey>
+                <themekey>CCTV</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>location</themekey>
+                <themekey>society</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>Washington</placekey>
+                <placekey>D.C.</placekey>
+                <placekey>District of Columbia</placekey>
+                <placekey>DC GIS</placekey>
+                <placekey>DCGIS</placekey>
+                <placekey>DC</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Metropolitan Police Department</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>441 4th Street, NW, 7th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20001</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-9099</cntvoice>
+                <cntfax>(202) 727-4106</cntfax>
+                <cntemail>mpd@dc.gov</cntemail>
+                <hours>8:15 am to 4:45 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>District Department of Transportation</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>250 M Street, SE</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 673-6813</cntvoice>
+                <cntfax>(202) 671-0650</cntfax>
+                <hours>8:15 am to 4:45 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Metropolitan Police Department, District Department of Transportation, Public Schools, and Department of Real Estate Services (DRES)</datacred>
+        <native>Version 6.2 (Build 9200) ; Esri ArcGIS 10.6.1.9273</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>Validated by source and/or responsible agency.</attraccr>
+        </attracc>
+        <logic>Validated by source and/or responsible agency.</logic>
+        <complete>Validated by source and/or responsible agency.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Cameras are placed in their general location but they can be a few meters off.</horizpar>
+            </horizpa>
+        </posacc>
+        <posacc>
+            <vertacc>
+                <vertaccr>N/A</vertaccr>
+            </vertacc>
+        </posacc>
+        <lineage>
+            <procstep>
+                <procdesc>MPD CCTV camera was moved from Wisconsin Ave and Abelmarle St NW in 2D to Kalorama Road and Champlain Street NW in 3D.</procdesc>
+                <procdate>20070816</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Staff took the four files and combined their contents, geocoded them to the MAR, and hand placed the remainder to the basemap.</procdesc>
+                <procdate>20080311</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>OCTO staff updated several new camera locations.</procdesc>
+                <procdate>20081013</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>added 23 new DDOT cameras in I-395 tunnel.</procdesc>
+                <procdate>20090305</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Added 9 Trinidad (Safe City Project) camera locations at: 1. Bladensburg Road and Neal Street, Northeast 2. Montello Avenue and Queen Street, Northeast. 3. Montello Avenue and Morse Street, Northeast\ 4. Montello Avenue and Mount Olivet Road, Northeast 5. Mount Olivet Road and Trinidad Avenue, Northeast 6. Trinidad Avenue and Meigs Place, Northeast 7. Holbrook Street and Neal Street, Northeast 8. Holbrook Street and Levis Street, Northeast 9. Staples Street and Oats Street, Northeast</procdesc>
+                <procdate>20100114</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>DC metropolitan police provided a comprehensive list of MPD cameras, 86 of which were located using a camera equipped with GPS. DC GIS staff replaced the 99 cameras originally in the layer with the updated 136 cameras from MPD. This includes red light cameras.</procdesc>
+                <procdate>20100514</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Staff updated the dataset using the latest information from DDOT.</procdesc>
+                <procdate>20181026</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated MPD cameras and added Ward and Police District</procdesc>
+                <procdate>20231117</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Added 50 MPD cameras.</procdesc>
+                <procdate>20240719</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated DDOT cameras.</procdesc>
+                <procdate>20241122</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated MPD CCTV from MPD website https://mpdc.dc.gov/page/mpdcs-closed-circuit-television-cctv-system</procdesc>
+                <procdate>20250808</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>647</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>CameraPt</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Coordinates defining the features.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ID</attrlabl>
+                <attrdef>Master Address Repository Identifier</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>NAME</attrlabl>
+                <attrdef>Name</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS</attrlabl>
+                <attrdef>Address</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DEPARTMENT</attrlabl>
+                <attrdef>Department</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INSTALL_YEAR</attrlabl>
+                <attrdef>Install Year</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PS_14</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PS_32</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>VDRVP_W_S</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTAL_SITE_SERVERS</attrlabl>
+                <attrdef>Total Site Servers</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MONITOR</attrlabl>
+                <attrdef>Monitor</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>EXTERIOR_CAM</attrlabl>
+                <attrdef>Exterior Camera</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INTERIOR_CAM</attrlabl>
+                <attrdef>Interior Camera</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PTZ_CAM</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTAL_STATIONARY_CAM</attrlabl>
+                <attrdef>Total Stationary Cameras</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>TOTAL_SITE_CAMERA</attrlabl>
+                <attrdef>Total Site Cameras</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>TOTAL_SITE_CAMERA2</attrlabl>
+                <attrdef>Total Site Cameras 2</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>AVAILABLE_CAMERA_PORT</attrlabl>
+                <attrdef>Available Camera Port</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>WEB_URL</attrlabl>
+                <attrdef>Web URL</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DESCRIPTION</attrlabl>
+                <attrdef>Description</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>X</attrlabl>
+                <attrdef>MAR X Coordinates (Maryland State Plane Meters)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Y</attrlabl>
+                <attrdef>MAR Y Coordinates (Maryland State Plane Meters)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LATITUDE</attrlabl>
+                <attrdef>MAR Latitude (decimal degrees)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+                <attrdomv>
+                                        
+                    <udom/>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>LONGITUDE</attrlabl>
+                <attrdef>MAR Longitude (decimal degrees)</attrdef>
+                <attrdefs>OCTO</attrdefs>
+                <attrdomv>
+                                        
+                    <udom/>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SE_ANNO_CAD_DATA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>CREATED_USER</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>CREATED_DATE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LAST_EDITED_USER</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LAST_EDITED_DATE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>GLOBALID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>WARD</attrlabl>
+                <attrdef>Ward</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>POLICE_DISTRICT</attrlabl>
+                <attrdef>Police District</attrdef>
+                <attrdefs>MPD</attrdefs>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20250806</metd>
+        <metrd>20080311</metrd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

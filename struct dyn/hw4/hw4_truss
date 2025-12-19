@@ -1,0 +1,78 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# given
+L = 2.5               # panel width and height (m)
+num_bays = 5          # 12.5 m / 2.5 m = 5 bays
+
+# Node coordinates
+nodes = []
+
+# bottom chord nodes
+for i in range(num_bays + 1):
+    nodes.append((i * L, 0))
+
+# top chord nodes
+for i in range(num_bays + 1):
+    nodes.append((i * L, L))
+
+nodes = np.array(nodes)
+
+# Element connectivity list (pairs of node indices)
+elements = []
+
+# Bottom chord
+for i in range(num_bays):
+    elements.append((i, i+1))
+
+# Top chord
+offset = num_bays + 1
+for i in range(offset, offset + num_bays):
+    elements.append((i, i+1))
+
+# Verticals
+for i in range(num_bays + 1):
+    elements.append((i, offset + i))
+
+# X‐bracing
+for i in range(num_bays):
+    # bottom i → top i+1
+    elements.append((i, offset + (i+1)))
+    # top i → bottom i+1
+    elements.append((offset + i, i+1))
+
+# plotting
+plt.figure(figsize=(10, 3))
+
+# Plot all truss members
+for e in elements:
+    n1, n2 = nodes[e[0]], nodes[e[1]]
+    plt.plot([n1[0], n2[0]], [n1[1], n2[1]], 'k-', linewidth=1)
+
+# Plot nodes
+plt.plot(nodes[:, 0], nodes[:, 1], 'ko')
+
+num_nodes_per_row = num_bays + 1
+
+# Label nodes: bottom row below, top row above
+num_nodes_per_row = num_bays + 1
+
+for i, (x, y) in enumerate(nodes):
+    if i < num_nodes_per_row:  # bottom row
+        plt.text(x, y - 0.1, str(i), color='black', fontsize=10, ha='center', va='top')
+    else:  # top row
+        plt.text(x, y + 0.1, str(i), color='black', fontsize=10, ha='center', va='bottom')
+
+# Plot supports as red triangles
+plt.plot(nodes[0,0], nodes[0,1], 'bs', markersize=12, label="pinned support")
+plt.plot(nodes[num_bays,0], nodes[num_bays,1], 'bs', markersize=12)
+
+plt.title("HW4 Truss")
+plt.xlabel("x (m)")
+plt.ylabel("y (m)")
+plt.axis("equal")
+plt.grid(False)
+
+plt.legend()
+plt.show()
+

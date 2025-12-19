@@ -1,0 +1,1392 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "1.4.0",
+  "build" : 7198,
+  "layers" : [
+    "CIMPATH=sturgis_area/sdgeology.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "SDgeology",
+      "uRI" : "CIMPATH=sturgis_area/sdgeology.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant",
+        "start" : 978307200000
+      },
+      "metadataURI" : "CIMPATH=Metadata/d13ad4b79c7dadd9ac613add79df7631.xml",
+      "description" : "SDgeology",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "64910041698b474c933eab856a4a8f6e"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "0",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "displayField" : "UnitName",
+        "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Symbol",
+            "fieldName" : "Symbol",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Infiltration",
+            "fieldName" : "Infiltration",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Competence",
+            "fieldName" : "Competence",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "UnitName",
+            "fieldName" : "UnitName",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "RockType",
+            "fieldName" : "RockType",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Length",
+            "fieldName" : "Shape_Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Area",
+            "fieldName" : "Shape_Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
+        "dataConnection" : {
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "Features",
+          "workspaceConnectionString" : "DATABASE=.\\Sturgis.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "SDgeology",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "htmlPopupFormat" : {
+        "type" : "CIMHtmlPopupFormat",
+        "htmlUseCodedDomainValues" : true,
+        "htmlPresentationStyle" : "TwoColumnTable"
+      },
+      "selectable" : true,
+      "featureCacheType" : "None",
+      "enableDisplayFilters" : true,
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expression" : "[NAME]",
+          "expressionEngine" : "VBScript",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Line",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "featureWeight" : 100,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : true,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 36,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 200,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "CurvedInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Map",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Map",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou"
+          },
+          "name" : "Default",
+          "priority" : 1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Polygon",
+            "featureWeight" : "None",
+            "labelWeight" : "Low",
+            "numLabelsOption" : "OneLabelPerPart",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal",
+            "allowOverlappingLabels" : true
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "compatibilityMode" : true,
+              "depth3D" : 1,
+              "drawSoftHyphen" : true,
+              "extrapolateBaselines" : true,
+              "flipAngle" : 90,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Times New Roman",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 6,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Center",
+              "kerning" : false,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "shadowColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              },
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            },
+            "symbolName" : "Symbol_91"
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMUniqueValueRenderer",
+        "colorRamp" : {
+          "type" : "CIMRandomHSVColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "maxH" : 360,
+          "minS" : 15,
+          "maxS" : 30,
+          "minV" : 99,
+          "maxV" : 100,
+          "minAlpha" : 100,
+          "maxAlpha" : 100
+        },
+        "defaultLabel" : "<all other values>",
+        "defaultSymbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol"
+          },
+          "symbolName" : "Symbol_90"
+        },
+        "fields" : [
+          "Symbol"
+        ],
+        "groups" : [
+          {
+            "type" : "CIMUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Qal",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            250,
+                            248,
+                            178,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_21"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Qal"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Qc",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            246,
+                            225,
+                            111,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_22"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Qc"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Qt",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            250,
+                            224,
+                            149,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_44"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Qt"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Tl",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            255,
+                            150,
+                            41,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_50"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Tl"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Tr",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            245,
+                            43,
+                            166,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_54"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Tr"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Tt",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            255,
+                            222,
+                            23,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_56"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Tt"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Tw",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            243,
+                            208,
+                            208,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_58"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Tw"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Kb",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            154,
+                            220,
+                            130,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_5"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Kb"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Kfl",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            196,
+                            231,
+                            187,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_9"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Kfl"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Kms",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            178,
+                            251,
+                            177,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_12"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Kms"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Jms",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            130,
+                            176,
+                            120,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_3"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Jms"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "TrPs",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            165,
+                            221,
+                            191,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_55"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "TrPs"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Pmo",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            160,
+                            210,
+                            219,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_19"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Pmo"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "PPm",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            147,
+                            164,
+                            180,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_18"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "PPm"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "MCpd",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            96,
+                            182,
+                            212,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_15"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "MCpd"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "MDpe",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            124,
+                            182,
+                            196,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_16"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "MDpe"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "OCwd",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            210,
+                            164,
+                            208,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_17"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "OCwd"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Wgr",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            155,
+                            92,
+                            156,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_59"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Wgr"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Wos",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            148,
+                            116,
+                            148,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_61"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Wos"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xb1",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            160,
+                            201,
+                            133,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_65"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xb1"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xbs",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            200,
+                            154,
+                            117,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_67"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xbs"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xgw",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            179,
+                            152,
+                            130,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_72"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xgw"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xif",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            179,
+                            60,
+                            60,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_79"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xif"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xq",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            226,
+                            193,
+                            155,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_82"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xq"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xsc2",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            143,
+                            143,
+                            153,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_86"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xsc2"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xsh",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            177,
+                            173,
+                            170,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_87"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xsh"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "Xsi",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            187,
+                            165,
+                            152,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Symbol_88"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Xsi"
+                    ]
+                  }
+                ],
+                "visible" : true
+              }
+            ]
+          }
+        ]
+      },
+      "scaleSymbols" : true,
+      "snappable" : true
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/d13ad4b79c7dadd9ac613add79df7631.xml",
+      "data" : "<metadata xml:lang=\"en\"><Esri><CreaDate>20170311</CreaDate><CreaTime>18064600</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>FALSE</SyncOnce><DataProperties><itemProps><itemName Sync=\"TRUE\">SDgeology</itemName><nativeExtBox><westBL Sync=\"TRUE\">599372.786900</westBL><eastBL Sync=\"TRUE\">619755.773900</eastBL><southBL Sync=\"TRUE\">4900400.440900</southBL><northBL Sync=\"TRUE\">4928502.687200</northBL><exTypeCode Sync=\"TRUE\">1</exTypeCode></nativeExtBox><itemLocation><linkage Sync=\"TRUE\">file://\\\\HARNEY2\\C$\\MGISPro\\gisclass\\mgisdata\\BlackHills\\Sturgis.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></itemLocation><imsContentType Sync=\"TRUE\">002</imsContentType></itemProps><coordRef><type Sync=\"TRUE\">Projected</type><geogcsn Sync=\"TRUE\">GCS_North_American_1983</geogcsn><csUnits Sync=\"TRUE\">Linear Unit: Meter (1.000000)</csUnits><projcsn Sync=\"TRUE\">NAD_1983_UTM_Zone_13N</projcsn><peXml Sync=\"TRUE\">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.5'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_13N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-105.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26913]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;10000&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26913&lt;/WKID&gt;&lt;LatestWKID&gt;26913&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef></DataProperties><SyncDate>20170311</SyncDate><SyncTime>18043200</SyncTime><ModDate>20170311</ModDate><ModTime>18052000</ModTime><scaleRange><minScale>625000</minScale><maxScale>50000</maxScale></scaleRange><ArcGISProfile>NAP</ArcGISProfile><ArcGISstyle>North American Profile of ISO19115 2003</ArcGISstyle></Esri><dataIdInfo><idPurp>A map showing the geologic units of the Sturgis 1:24,000 quadrangle, clipped from the 1:500,000 statewide geologic map of South Dakota.   Accompanying layer file is helpful for establishing unit colors to match the published map.\r\n</idPurp><idAbs>&lt;DIV STYLE=\"text-align:Left;\"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Map showing the geologic units of the Sturgis 1:24,00 quadrangle, clipped from the statewide geologic map. Attribute fields for the unit name, infiltration, competence and rock type added by Maribeth Price and filled out based on consultation with the rock units described on the map publication pdf. Intended for educational use only.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Source map downloaded from the South Dakota Geological Survey, clipped to the quadrangle, and projected to UTM Zone 13 NAD 1983.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Source Scale 1:500,000&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs><idCredit>Geologic Map of South Dakota, 2004, James E. Martin, J. Foster Sawyer, Mark D. Fahrenbach, Dennis W. Tomhave, and Layne D. Schulz, 2004, South Dakota Geological Survey. Scale 1:500,000.</idCredit><searchKeys><keyword>geology</keyword><keyword>South Dakota</keyword><keyword>geologic map</keyword><keyword>Sturgis</keyword></searchKeys><envirDesc Sync=\"TRUE\"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.5.0.6491</envirDesc><dataLang><languageCode value=\"eng\" Sync=\"TRUE\"/><countryCode value=\"USA\" Sync=\"TRUE\"/></dataLang><idCitation><resTitle Sync=\"TRUE\">SDgeology</resTitle><presForm><PresFormCd value=\"005\" Sync=\"TRUE\"/></presForm></idCitation><spatRpType><SpatRepTypCd value=\"001\" Sync=\"TRUE\"/></spatRpType><dataExt><geoEle xmlns=\"\"><GeoBndBox esriExtentType=\"search\"><exTypeCode Sync=\"TRUE\">1</exTypeCode><westBL Sync=\"TRUE\">-103.755301</westBL><eastBL Sync=\"TRUE\">-103.493601</eastBL><northBL Sync=\"TRUE\">44.503003</northBL><southBL Sync=\"TRUE\">44.246994</southBL></GeoBndBox></geoEle></dataExt><resConst><Consts><useLimit>&lt;DIV STYLE=\"text-align:Left;\"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Intended for educational use only.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</useLimit></Consts></resConst></dataIdInfo><eainfo><detailed Name=\"SDgeology\"><enttyp><enttypl Sync=\"TRUE\">SDgeology</enttypl><enttypt Sync=\"TRUE\">Feature Class</enttypt><enttypc Sync=\"TRUE\">132</enttypc></enttyp><attr><attrlabl Sync=\"TRUE\">Shape</attrlabl><attalias Sync=\"TRUE\">Shape</attalias><attrtype Sync=\"TRUE\">Geometry</attrtype><attwidth Sync=\"TRUE\">0</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Feature geometry.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">OBJECTID</attrlabl><attalias Sync=\"TRUE\">OBJECTID</attalias><attrtype Sync=\"TRUE\">OID</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Internal feature number.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">Symbol</attrlabl><attalias Sync=\"TRUE\">SDGeologyLUT.NAME</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">6</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Infiltration</attrlabl><attalias Sync=\"TRUE\">Infiltration</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">15</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Competence</attrlabl><attalias Sync=\"TRUE\">Competence</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">15</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">UnitName</attrlabl><attalias Sync=\"TRUE\">UnitName</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">100</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Shape_Length</attrlabl><attalias Sync=\"TRUE\">Shape_Length</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Length of feature in internal units.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">Shape_Area</attrlabl><attalias Sync=\"TRUE\">Shape_Area</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Area of feature in internal units squared.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">RockType</attrlabl><attalias Sync=\"TRUE\">RockType</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr></detailed></eainfo><mdLang><languageCode value=\"eng\" Sync=\"TRUE\"/><countryCode value=\"USA\" Sync=\"TRUE\"/></mdLang><distInfo><distFormat><formatName Sync=\"TRUE\">File Geodatabase Feature Class</formatName></distFormat></distInfo><mdHrLv><ScopeCd value=\"005\" Sync=\"TRUE\"/></mdHrLv><mdHrLvName Sync=\"TRUE\">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code=\"26913\" Sync=\"TRUE\"/><idCodeSpace Sync=\"TRUE\">EPSG</idCodeSpace><idVersion Sync=\"TRUE\">6.13(3.0.1)</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name=\"SDgeology\"><geoObjTyp><GeoObjTypCd value=\"002\" Sync=\"TRUE\"/></geoObjTyp><geoObjCnt Sync=\"TRUE\">132</geoObjCnt></geometObjs><topLvl><TopoLevCd value=\"001\" Sync=\"TRUE\"/></topLvl></VectSpatRep></spatRepInfo><spdoinfo><ptvctinf><esriterm Name=\"SDgeology\"><efeatyp Sync=\"TRUE\">Simple</efeatyp><efeageom code=\"4\" Sync=\"TRUE\"/><esritopo Sync=\"TRUE\">FALSE</esritopo><efeacnt Sync=\"TRUE\">132</efeacnt><spindex Sync=\"TRUE\">TRUE</spindex><linrefer Sync=\"TRUE\">FALSE</linrefer></esriterm></ptvctinf></spdoinfo><mdDateSt Sync=\"TRUE\">20170311</mdDateSt><Binary><Thumbnail><Data EsriPropertyType=\"PictureX\">/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a\r\nHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy\r\nMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACFAMgDASIA\r\nAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA\r\nAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3\r\nODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm\r\np6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA\r\nAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx\r\nBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK\r\nU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3\r\nuLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iii\r\ngAooooAKKKKACoPtlr/z8w/99ip6wI0bETLJ9yLd8wGGYYz1HHVRntisK9b2VtBpXNk3dsOtxF/3\r\n2KDeWoGTcw4653is+e5jlXYpOwH52BUYPYc9+/tioYbgKrRy8A8Mp7jueDx7j8ua5vrzt8JXKaxv\r\nLUDJuYQB/tik+2WvH+kw88/fFVm+eIwSkByMAkcN7j/CoLdSgRTKR5QYO3TIDEAHPbr9MfnP159g\r\n5S8L63LlA5LA4ICHjjPp6Uv22DIG5uenyNz+lZ8xWSVZgmG3BQxXBCcbjzz3xVxowQu35Sv3cDp7\r\nfSh4+S6ByjpNRtYlLSSMoBwSUbjjPpTV1WydQyzggjIIUnI/KkWQ7gsgCsemDkH6U9lV1KsAVPBB\r\n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</Data></Thumbnail></Binary></metadata>\r\n"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "64910041698b474c933eab856a4a8f6e",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          0
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+# ---------------------
+# hit the spacetrack API and get TLEs for orbital debris in LEO
+# ---------------------
+
+import requests
+import json
+import configparser
+import xlsxwriter
+from datetime import datetime
+import math
+
+# Constants
+GM = 398600441800000.0       # mu, m^3/s^2
+MRAD = 6378.137              # radius of earth
+PI = math.pi
+TPI86 = 2.0 * PI / 86400.0
+
+# Read config
+config = configparser.ConfigParser()
+config.read("./SLTrack.ini")
+configUsr = config.get("configuration", "username")
+configPwd = config.get("configuration", "password")
+configOut = config.get("configuration", "output")
+siteCred = {'identity': configUsr, 'password': configPwd}
+
+# Excel setup
+workbook = xlsxwriter.Workbook(configOut)
+worksheet = workbook.add_worksheet()
+z1_format = workbook.add_format({'num_format': '#,##0.0'})
+z3_format = workbook.add_format({'num_format': '#,##0.000'})
+z0_format = workbook.add_format({'num_format': '#,##0'})
+
+# Write headers
+nowStr = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
+worksheet.write('A1', 'LEO debris data from Space-Track on ' + nowStr)
+
+headers = [
+    'NORAD_CAT_ID','SATNAME','EPOCH','Inc','Ecc','MeanMotion',
+    'ApA','PeA','AvA','SMa','T','Vel',
+    'TLE0','TLE1','TLE2'          
+]
+
+for col, h in enumerate(headers):
+    worksheet.write(2, col, h)
+
+wsline = 3
+
+# Space-Track URLs
+uriBase = "https://www.space-track.org"
+requestLogin = "/ajaxauth/login"
+requestCmdAction = "/basicspacedata/query"
+requestDebrisTLEs = "/class/tle_latest/OBJECT_TYPE/DEBRIS/ORDINAL/1/format/json"
+
+# Start session
+with requests.Session() as session:
+    resp = session.post(uriBase + requestLogin, data=siteCred)
+    if resp.status_code != 200:
+        raise Exception("Login failed")
+
+    resp = session.get(uriBase + requestCmdAction + requestDebrisTLEs)
+    if resp.status_code != 200:
+        raise Exception("Failed to get debris TLEs")
+
+    retData = json.loads(resp.text)
+
+    debrisList = retData  # Already limited by 5000 in API
+
+    for e in debrisList:
+        mmoti = float(e['MEAN_MOTION'])
+        ecc = float(e['ECCENTRICITY'])
+        inc = float(e['INCLINATION'])
+
+        sma = (GM**(1/3)) / ((TPI86 * mmoti) ** (2/3)) / 1000.0
+
+        apo = sma * (1.0 + ecc) - MRAD
+        per = sma * (1.0 - ecc) - MRAD
+
+        # only grabbing the stuff in LEO
+        if per < 160 or apo > 2000:
+            continue
+
+        orbT = 2.0 * PI * ((sma*1000.0) ** 3 / GM) ** 0.5
+        orbV = (GM / (sma*1000.0)) ** 0.5
+
+        worksheet.write(wsline, 0, int(e['NORAD_CAT_ID']))
+        worksheet.write(wsline, 1, e['OBJECT_NAME'])
+        worksheet.write(wsline, 2, e['EPOCH'])
+        worksheet.write(wsline, 3, inc, z1_format)
+        worksheet.write(wsline, 4, ecc, z3_format)
+        worksheet.write(wsline, 5, mmoti, z1_format)
+        worksheet.write(wsline, 6, apo, z1_format)
+        worksheet.write(wsline, 7, per, z1_format)
+        worksheet.write(wsline, 8, (apo+per)/2.0, z1_format)
+        worksheet.write(wsline, 9, sma, z1_format)
+        worksheet.write(wsline, 10, orbT, z0_format)
+        worksheet.write(wsline, 11, orbV, z1_format)
+
+        # ---- ADD TLE LINES HERE ----
+        worksheet.write(wsline, 12, e.get('TLE_LINE0', ''))
+        worksheet.write(wsline, 13, e.get('TLE_LINE1', ''))
+        worksheet.write(wsline, 14, e.get('TLE_LINE2', ''))
+
+        wsline += 1
+
+workbook.close()
+print("Completed LEO debris export, total rows:", wsline-3)

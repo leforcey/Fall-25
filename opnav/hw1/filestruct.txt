@@ -1,0 +1,13 @@
+OpNav/
+└── hw1/
+    ├── kernels/                          # Folder for SPICE or other kernel files
+    ├── eqnofmotion.m                     # Equation of motion function/script
+    ├── hipparcos.csv                     # Large data file (star catalog)
+    ├── hwq1proofs.mlx                    # Homework proofs (Live Script)
+    ├── opnav_hw1.mlx                     # Main Live Script for HW1
+    ├── opnav_hw1_q3.mlx                  # HW1 Question 3 script
+    ├── opnav_hw1_q4.mlx                  # HW1 Question 4 script
+    ├── RADEtoVEC.m                       # Converts RA/DEC to vector
+    ├── STDMDL5toVEC.m                    # Standard model conversion
+    ├── stellarabcorr.m                   # Stellar aberration correction
+    └── VECtoRADEC.m                      # Converts vector to RA/DEC

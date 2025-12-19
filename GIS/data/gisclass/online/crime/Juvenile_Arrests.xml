@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20180309</pubdate>
+                <title>MPD Juvenile Arrests</title>
+                <geoform>tabular digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>This juvenile arrest report contains all arrests made by MPD and other law enforcement agencies of individuals 17 and under, excluding any arrests that have been expunged.  Only the top charge (most serious charge) is reported for each arrest.The "Home PSA" of all arrests for which a valid District of Columbia address was given are provided.  For all cases where the home address was outside the District of Columbia, the home address field was manually reviewed and marked as "OUT OF STATE". "UNKNOWN" is provided for cases where no address was reported.The "Crime/Arrest PSA" field contains the PSA associated with the original crime where the arrest record could be matched against the original crime report. For cases where the DC Moultrie Courthouse was indicated as the crime address (e.g., for Juvenile Custody Order, Failure to Appear, Fugitive from Justice, and Booking Order), "COURT" was listed as the crime PSA instead of PSA 102.  For cases for which the Juvenile Processing Center (JPC) was indicated as the crime address, or for cases where other processing locations were listed as the crime address (e.g., District station or MPD Headquarters), "DISTRICT/JPC" was listed as the crime PSA . For arrest cases without proper crime incident address, it was assumed that the arrest was made at the site of the crime, and the PSA associated with the arrest location was provided.</abstract>
+            <purpose>The data represents biannual reports on Juvenile Arrests in the District.</purpose>
+            <supplinf>As of January 1, 2024, the process for counting juvenile arrests was updated to count unique individuals arrested. Prior to this date, arrest events were a count of issued arrest numbers (for unique offenses). Arrests are now counted by the creation of a unique ID, which is a combination of arrest date and the arrestee’s name and date of birth. The charge listed is the top arrest charge of the arrest event determined by hierarchy. Data includes arrests made by MPD and other law enforcement agencies in the District of Columbia. Totals are subject to change due to record sealings, expungements, and data quality audits. This data will not match arrest information previously released via MPD’s Annual Reports because of the updated methodology. The term "juvenile" used in the data is defined as individuals under the age of 18 years (≤ 17 years of age) at the time of arrest. These "juvenile" totals may include Title 16 cases where the United States Attorney’s Office brings adult charges against juveniles. These counts may not include individuals who were juveniles at the time the offense was committed but were adults at the time of their arrest.</supplinf>
+        </descript>
+        <spdom>
+            <bounding>
+                <westbc>-77.13</westbc>
+                <eastbc>-76.9</eastbc>
+                <northbc>39.01</northbc>
+                <southbc>38.78</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>mpd</themekey>
+                <themekey>safety</themekey>
+                <themekey>public safety</themekey>
+                <themekey>juvenile arrest</themekey>
+                <themekey>juvenile arrests</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>society</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>washington dc</placekey>
+                <placekey>dc</placekey>
+                <placekey>district of columbia</placekey>
+            </place>
+        </keywords>
+        <accconst>Other Constraints</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Metropolitan Police Department</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>441 4th Street, NW, 7th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20001</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-9099</cntvoice>
+                <cntfax>(202) 727-4106</cntfax>
+                <cntemail>mpd@dc.gov</cntemail>
+                <hours>8:15 am to 4:45 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>Metropolitan Police Department</datacred>
+        <native>Esri ArcGIS 13.0.3.36057</native>
+    </idinfo>
+    <dataqual>
+        <lineage>
+            <procstep>
+                <procdesc>added July 2019 - December 2020 data</procdesc>
+                <procdate>20210312</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>added Jan-June 2021</procdesc>
+                <procdate>20211203</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>added July-December 2021 data.</procdesc>
+                <procdate>20220527</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Update from MPD open data site, added 2022 and 2023 January-June.</procdesc>
+                <procdate>20230929</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>added July-Dec 2023 data</procdesc>
+                <procdate>20240531</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>added January-June 2024</procdesc>
+                <procdate>20240913</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>DCGIS.JuvenileArrest</enttypl>
+                <enttypd>MPD Juvenile Arrests</enttypd>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ARREST_DATE</attrlabl>
+                <attrdef>Arrest Date</attrdef>
+                <attrdefs>MPD</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>TOP_CHARGE_DESC</attrlabl>
+                <attrdef>Top Charge Description</attrdef>
+                <attrdefs>MPD</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>HOME_PSA</attrlabl>
+                <attrdef>Home Police Service Area</attrdef>
+                <attrdefs>MPD</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>CRIME_PSA</attrlabl>
+                <attrdef>Crime Police Service Area</attrdef>
+                <attrdefs>MPD</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>GIS_ID</attrlabl>
+                <attrdef>GIS Identifier</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>GLOBALID</attrlabl>
+                <attrdef>Internal geodatabase unique identifier</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>CREATOR</attrlabl>
+                <attrdef>Creator</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>CREATED</attrlabl>
+                <attrdef>Crated</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>EDITOR</attrlabl>
+                <attrdef>Editor</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>EDITED</attrlabl>
+                <attrdef>Edited</attrdef>
+                <attrdefs>OCTO</attrdefs>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Office of the Chief Technology Officer</cntorg>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-6857</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20240910</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Metropolitan Police Department</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>441 4th Street, NW, 7th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20001</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>(202) 727-9099</cntvoice>
+                <cntfax>(202) 727-4106</cntfax>
+                <cntemail>mpd@dc.gov</cntemail>
+                <hours>8:15 am to 4:45 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</me

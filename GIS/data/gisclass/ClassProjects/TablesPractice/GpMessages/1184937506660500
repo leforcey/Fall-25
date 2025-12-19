@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, October 28, 2025 11:43:50 PM</msg><msg code="539" type="100">ERROR 000539: ﻿Traceback (most recent call last):
+﻿  File "&lt;expression&gt;", line 1, in &lt;module&gt;
+﻿  File "&lt;string&gt;", line 5, in convert_date
+﻿  File "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Lib\_strptime.py", line 567, in _strptime_datetime
+﻿    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+﻿                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Lib\_strptime.py", line 352, in _strptime
+﻿    raise ValueError("unconverted data remains: %s" %
+﻿ValueError: unconverted data remains:  
+</msg><msg code="-2147467259" type="100">Failed to execute (CalculateField).</msg><msg code="0" type="3">Failed at Tuesday, October 28, 2025 11:43:50 PM (Elapsed Time: 0.50 seconds)</msg></messages>
